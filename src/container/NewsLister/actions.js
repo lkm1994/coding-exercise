@@ -14,7 +14,6 @@ const Actions = {
       dispatch(action(NEWS_LISTER_ACTION_TYPES.SEARCH_NEWS_LISTER, payload));
       return _request(payload)
         .then((response) => {
-          console.log(response);
           const result =
             response.data && response.data.response
               ? response.data.response
